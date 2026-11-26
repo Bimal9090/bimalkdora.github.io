@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dr. Bimal Kumar Dora — Power Systems &amp; Renewable Energy Research</title>
+<meta name="description" content="Dr. Bimal Kumar Dora, PhD research scholar in power system engineering at VNIT Nagpur: 100% renewable grids, HVDC interconnection and metaheuristic optimisation.">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Dr. Bimal Kumar Dora — Power Systems &amp; Renewable Energy Research">
+<meta property="og:description" content="Research journeys, achievements and publications in renewable energy systems and power system optimisation.">
+<!-- After publishing: add <meta property="og:url" content="[your site URL]"> and <meta property="og:image" content="[URL of a 1200×630 preview image]"> -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0A0C1F">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%235B3BE0'/%3E%3Cstop offset='1' stop-color='%23D6336C'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='url(%23g)'/%3E%3Ctext x='16' y='22.5' font-family='Arial,sans-serif' font-size='18' font-weight='700' fill='%23fff' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --night:#0A0C1F;
+    --night-2:#12152E;
+    --paper:#F7F6FB;
+    --surface:#FFFFFF;
+    --ink:#12132B;
+    --ink-2:#2E3150;
+    --muted:#555A78;
+    --line:#E4E2F0;
+    --violet:#5B3BE0;
+    --violet-soft:#EEEAFE;
+    --violet-bright:#8F75FF;
+    --rose:#D6336C;
+    --grad:linear-gradient(115deg,#5B3BE0 0%,#8B44D8 52%,#D6336C 100%);
+
+    --display:"Bricolage Grotesque","Segoe UI",Arial,sans-serif;
+    --body:"Manrope","Segoe UI",Arial,sans-serif;
+
+    --step--1:clamp(.8125rem,.8rem + .08vw,.875rem);
+    --step-0:clamp(1rem,.97rem + .15vw,1.0625rem);
+    --step-1:clamp(1.2rem,1.1rem + .45vw,1.45rem);
+    --step-2:clamp(2rem,1.45rem + 2.4vw,3.25rem);
+    --shell:1180px;
+    --pad:clamp(1.15rem,4.5vw,2.75rem);
+    --sec:clamp(4rem,9vw,7.5rem);
+    --radius:18px;
+    --ease:cubic-bezier(.16,1,.3,1);
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{margin:0;background:var(--paper);color:var(--ink);font:var(--step-0)/1.65 var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  ::selection{background:var(--violet);color:#fff}
+  h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:-.03em;line-height:1.06;margin:0;text-wrap:balance}
+  p{margin:0;max-width:65ch;text-wrap:pretty}
+  a{color:var(--violet);text-decoration:none;overflow-wrap:anywhere}
+  a:hover{color:var(--rose)}
+  :focus-visible{outline:3px solid var(--violet-bright);outline-offset:3px;border-radius:6px}
+  img{display:block;max-width:100%;height:auto}
+  svg{flex:none}
+  .shell{max-width:var(--shell);margin:0 auto;padding:0 var(--pad)}
+  .skip{position:absolute;left:-9999px}
+  .skip:focus{left:1rem;top:1rem;z-index:99;background:#fff;color:#000;padding:.7rem 1rem;border-radius:8px}
+
+  /* placeholders: brackets stay visible so nothing unfinished goes live unnoticed */
+  .slot{color:inherit;opacity:.72}
+
+
+  /* journey tile (typographic cover; swap for a project image later) */
+  .tile{position:relative;aspect-ratio:16/11;border-radius:22px;overflow:hidden;isolation:isolate;color:#fff;display:flex;flex-direction:column;justify-content:flex-end;gap:.6rem;padding:clamp(1.25rem,3vw,2rem);box-shadow:0 30px 60px -40px rgba(18,19,43,.6);
+    background:radial-gradient(70% 80% at 15% 0%,rgba(91,59,224,.85),transparent 65%),radial-gradient(60% 70% at 100% 100%,rgba(214,51,108,.7),transparent 65%),var(--night-2)}
+  .tile::after{content:"";position:absolute;inset:0;z-index:-1;background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);background-size:40px 40px;-webkit-mask-image:linear-gradient(180deg,#000,transparent 75%);mask-image:linear-gradient(180deg,#000,transparent 75%)}
+  .tile-no{align-self:flex-start;margin-bottom:auto;font:700 .82rem/1 var(--display);background:rgba(10,12,31,.45);border:1px solid rgba(255,255,255,.22);padding:.5rem .75rem;border-radius:999px}
+  .tile-k{font-size:.85rem;font-weight:600;color:rgba(255,255,255,.78)}
+  .tile-t{font:700 clamp(1.35rem,1rem + 1.4vw,1.95rem)/1.12 var(--display);letter-spacing:-.03em;max-width:18ch}
+  .stack{display:flex;flex-wrap:wrap;gap:.35rem;margin:.35rem 0 0;padding:0;list-style:none}
+  .stack li{font-size:.76rem;font-weight:600;padding:.22rem .6rem;border-radius:999px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.2)}
+  .journey h3{color:var(--ink)}
+  .initials{font:800 1.7rem/1 var(--display);letter-spacing:-.04em;color:#fff}
+  .certs{font-size:.92rem;color:var(--ink-2);line-height:1.55}
+  .human{color:var(--muted)!important}
+  @media print{
+    .tile{aspect-ratio:auto;min-height:44mm;border-radius:4mm;box-shadow:none;padding:5mm;gap:2mm}
+    .tile-no{font-size:7.5pt;padding:1.2mm 2.5mm}
+    .tile-t{font-size:12.5pt}
+    .tile-k{font-size:8pt}
+    .stack li{font-size:7pt;padding:.5mm 2mm}
+    .hero h1{font-size:40pt}
+  }
+
+  /* ---------- top bar ---------- */
+  .bar{position:sticky;top:0;z-index:50;background:rgba(10,12,31,.86);-webkit-backdrop-filter:saturate(160%) blur(14px);backdrop-filter:saturate(160%) blur(14px);border-bottom:1px solid rgba(255,255,255,.08)}
+  .bar-in{display:flex;align-items:center;gap:1.5rem;min-height:64px}
+  .brand{display:inline-flex;align-items:center;gap:.65rem;color:#fff;font:600 1.05rem/1 var(--display);letter-spacing:-.01em}
+  .brand:hover{color:#fff}
+  .mark{width:32px;height:32px;border-radius:10px;background:var(--grad);display:grid;place-items:center;font-weight:700;font-size:1rem}
+  .links{display:flex;gap:.25rem;margin-left:auto}
+  .links a{color:rgba(255,255,255,.74);font-size:.92rem;font-weight:500;padding:.6rem .8rem;border-radius:999px;transition:background .25s,color .25s}
+  .links a:hover{color:#fff;background:rgba(255,255,255,.08)}
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:48px;padding:.8rem 1.4rem;border-radius:999px;font:600 .95rem/1 var(--body);border:1px solid transparent;cursor:pointer;transition:transform .3s var(--ease),box-shadow .3s var(--ease),background .3s,color .3s;white-space:nowrap}
+  .btn-grad{background:var(--grad);color:#fff;box-shadow:0 14px 32px -14px rgba(91,59,224,.95)}
+  .btn-grad:hover{color:#fff;transform:translateY(-2px);box-shadow:0 20px 40px -16px rgba(91,59,224,1)}
+  .btn-ghost{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.24);color:#fff}
+  .btn-ghost:hover{background:rgba(255,255,255,.12);color:#fff}
+  .btn-sm{min-height:42px;padding:.55rem 1.1rem;font-size:.88rem}
+
+  /* ---------- hero ---------- */
+  .hero{position:relative;overflow:hidden;color:#fff;isolation:isolate;
+    background:radial-gradient(80% 90% at 0% 0%,rgba(91,59,224,.6),transparent 60%),radial-gradient(60% 70% at 100% 10%,rgba(214,51,108,.42),transparent 62%),radial-gradient(60% 60% at 60% 120%,rgba(91,59,224,.35),transparent 70%),var(--night);
+    padding:clamp(3rem,8vw,6.5rem) 0 clamp(3rem,7vw,5.5rem)}
+  .hero::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+    background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:56px 56px;
+    -webkit-mask-image:radial-gradient(75% 75% at 30% 25%,#000,transparent 80%);mask-image:radial-gradient(75% 75% at 30% 25%,#000,transparent 80%)}
+  .hero-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:clamp(2.25rem,6vw,5rem);align-items:center}
+  .hello{display:inline-flex;align-items:center;gap:.6rem;font-size:.9rem;color:rgba(255,255,255,.78);padding:.4rem .9rem .4rem .7rem;border:1px solid rgba(255,255,255,.16);border-radius:999px;background:rgba(255,255,255,.04)}
+  .dot{width:8px;height:8px;border-radius:50%;background:#3DDC97;box-shadow:0 0 0 4px rgba(61,220,151,.18)}
+  .hero h1{font-size:clamp(4rem,13vw,9.25rem);font-weight:800;line-height:.86;letter-spacing:-.05em;margin:clamp(1.1rem,2.5vw,1.75rem) 0 clamp(1rem,2vw,1.5rem)}
+  .hero h1 span{background:linear-gradient(100deg,#fff 30%,#D9CCFF 70%,#FFB8D0);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .role-line{font:600 var(--step-1)/1.3 var(--display);letter-spacing:-.015em;color:#fff;max-width:28ch}
+  .hero-line{margin-top:.85rem;font-size:clamp(1rem,1.4vw,1.13rem);color:rgba(255,255,255,.76);max-width:46ch}
+  .hero-actions{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:clamp(1.6rem,3vw,2.25rem)}
+
+  .card{position:relative;background:linear-gradient(160deg,rgba(255,255,255,.09),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.14);border-radius:24px;padding:clamp(1rem,2vw,1.35rem);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:0 40px 80px -48px rgba(0,0,0,.95)}
+  .card-top{display:grid;grid-template-columns:5.25rem minmax(0,1fr);gap:1rem;align-items:center;padding-bottom:1rem;border-bottom:1px solid rgba(255,255,255,.12)}
+  .avatar{aspect-ratio:1;border-radius:16px;background:var(--grad);padding:2px}
+  .avatar-in{width:100%;height:100%;border-radius:14px;background:#1A1D3B;display:grid;place-items:center;text-align:center;font-size:.68rem;line-height:1.3;color:rgba(255,255,255,.7);overflow:hidden}
+  .avatar-in img{width:100%;height:100%;object-fit:cover}
+  .card-name{font:700 1.15rem/1.2 var(--display)}
+  .card-sub{font-size:.88rem;color:rgba(255,255,255,.72);margin-top:.15rem}
+  .facts{margin:0;display:grid;gap:.1rem;padding:.6rem 0}
+  .facts div{display:grid;grid-template-columns:6rem minmax(0,1fr);gap:.75rem;padding:.45rem 0;font-size:.92rem;align-items:baseline}
+  .facts dt{color:rgba(255,255,255,.58);font-size:.84rem}
+  .facts dd{margin:0;color:#fff;font-weight:500;overflow-wrap:anywhere}
+  .facts dd a{color:#fff;border-bottom:1px solid rgba(255,255,255,.4)}
+  .socials{display:flex;gap:.5rem;flex-wrap:wrap;padding-top:1rem;border-top:1px solid rgba(255,255,255,.12)}
+  .social{display:inline-flex;align-items:center;gap:.45rem;min-height:44px;padding:.4rem .9rem;border-radius:999px;border:1px solid rgba(255,255,255,.18);color:rgba(255,255,255,.88);font-size:.86rem;font-weight:500;background:rgba(255,255,255,.04);transition:background .25s,border-color .25s}
+  .social:hover{color:#fff;background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.4)}
+  .social svg{width:16px;height:16px}
+
+  /* ---------- section heads ---------- */
+  .sec{padding:var(--sec) 0;scroll-margin-top:64px}
+  .head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr);gap:1rem clamp(2rem,6vw,5rem);align-items:end;margin-bottom:clamp(2.25rem,5vw,3.75rem)}
+  .kicker{display:inline-flex;align-items:center;gap:.6rem;color:var(--violet);font-size:.9rem;font-weight:700;margin-bottom:.8rem}
+  .kicker::before{content:"";width:22px;height:3px;border-radius:3px;background:var(--grad)}
+  .head h2{font-size:var(--step-2);max-width:16ch}
+  .head .intro{color:var(--muted);font-size:1.03rem}
+
+  /* ---------- about ---------- */
+  .about{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(2rem,6vw,5rem);align-items:start}
+  .lead{font:500 clamp(1.3rem,1.05rem + 1.1vw,1.85rem)/1.4 var(--display);letter-spacing:-.02em;color:var(--ink);max-width:32ch}
+  .about-copy p + p{margin-top:1.1rem}
+  .about-copy .body{color:var(--ink-2)}
+  .numbers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:clamp(2rem,4vw,2.75rem);border-top:1px solid var(--line)}
+  .numbers div{padding:1.2rem 1rem 0 0}
+  .numbers div + div{padding-left:1rem;border-left:1px solid var(--line)}
+  .numbers b{display:block;font:700 clamp(1.8rem,1.4rem + 1.4vw,2.5rem)/1 var(--display);letter-spacing:-.04em;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .numbers span{display:block;font-size:.86rem;color:var(--muted);margin-top:.4rem;line-height:1.35}
+  .side{display:grid;gap:1rem}
+  .panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(1.2rem,2.4vw,1.6rem)}
+  .panel h3{font-size:1.02rem;letter-spacing:-.015em;margin-bottom:.8rem}
+  .skills{display:flex;flex-wrap:wrap;gap:.45rem;margin:0;padding:0;list-style:none}
+  .skills li{font-size:.86rem;font-weight:500;color:var(--ink-2);background:var(--violet-soft);border-radius:999px;padding:.32rem .75rem}
+  .edu{list-style:none;margin:0;padding:0;display:grid;gap:.85rem}
+  .edu li{display:grid;grid-template-columns:3.6rem minmax(0,1fr);gap:.75rem;font-size:.92rem;line-height:1.45}
+  .edu .y{font-weight:700;color:var(--violet);font-variant-numeric:tabular-nums}
+  .edu small{display:block;color:var(--muted);font-size:.84rem}
+
+  /* ---------- journeys ---------- */
+  .journeys{display:grid;gap:clamp(3.5rem,8vw,6.5rem)}
+  .journey{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.08fr);gap:clamp(1.75rem,5vw,4.5rem);align-items:start}
+  .journey:nth-child(even) .media{order:2}
+  .media{position:sticky;top:96px}
+  .shot{position:relative;aspect-ratio:16/11;border-radius:22px;overflow:hidden;background:var(--night-2);box-shadow:0 30px 60px -40px rgba(18,19,43,.6)}
+  .shot img{width:100%;height:100%;object-fit:cover}
+  .shot-ph{position:absolute;inset:0;display:grid;place-items:center;text-align:center;color:rgba(255,255,255,.78);font-size:.86rem;line-height:1.5;padding:1.5rem;
+    background:radial-gradient(70% 80% at 20% 10%,rgba(91,59,224,.75),transparent 65%),radial-gradient(60% 70% at 95% 100%,rgba(214,51,108,.6),transparent 65%),var(--night-2)}
+  .shot-ph strong{display:block;font:700 clamp(1.3rem,1rem + 1.2vw,1.9rem)/1.1 var(--display);color:#fff;letter-spacing:-.03em;margin-bottom:.45rem}
+  .shot-no{position:absolute;left:1rem;top:1rem;font:700 .82rem/1 var(--display);color:#fff;background:rgba(10,12,31,.55);border:1px solid rgba(255,255,255,.2);padding:.5rem .75rem;border-radius:999px;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+  .meta{display:flex;flex-wrap:wrap;gap:.4rem .9rem;align-items:center;font-size:.9rem;color:var(--muted);margin-bottom:.55rem}
+  .meta .yr{font-weight:700;color:var(--violet);font-variant-numeric:tabular-nums}
+  .journey h3{font-size:clamp(1.6rem,1.25rem + 1.5vw,2.35rem);letter-spacing:-.035em}
+  .journey h3 a{color:var(--ink);background:linear-gradient(currentColor,currentColor) 0 100%/0 2px no-repeat;transition:background-size .4s var(--ease),color .25s}
+  .journey h3 a:hover{color:var(--violet);background-size:100% 2px}
+  .role{color:var(--ink-2);margin-top:.5rem;font-weight:500}
+
+  .path{list-style:none;margin:clamp(1.5rem,3vw,2rem) 0 0;padding:0;position:relative}
+  .path li:not(:last-child)::before{content:"";position:absolute;left:17px;top:36px;bottom:0;width:2px;background:linear-gradient(180deg,var(--violet),var(--rose));opacity:.45}
+  .path li{position:relative;padding:0 0 1.5rem 3.4rem}
+  .path li:last-child{padding-bottom:0}
+  .node{position:absolute;left:0;top:0;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:var(--surface);border:2px solid var(--violet);color:var(--violet);font:700 .82rem/1 var(--display)}
+  .path li:nth-child(2) .node{border-color:#8B44D8;color:#7A36C8}
+  .path li:last-child .node{background:var(--grad);border-color:transparent;color:#fff}
+  .beat{display:block;font:700 .95rem/1.2 var(--display);letter-spacing:-.01em;color:var(--ink);padding-top:.5rem;margin-bottom:.3rem}
+  .path p{color:var(--ink-2);font-size:.97rem}
+  .path li:last-child p{color:var(--ink);font-weight:500}
+  .foot{display:flex;flex-wrap:wrap;gap:1rem 1.5rem;align-items:center;justify-content:space-between;margin-top:1.6rem;padding-top:1.25rem;border-top:1px solid var(--line)}
+  .tags{display:flex;gap:.4rem;flex-wrap:wrap;margin:0;padding:0;list-style:none}
+  .tags li{font-size:.8rem;font-weight:600;color:var(--ink-2);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:.26rem .7rem}
+  .out{display:flex;gap:.4rem 1.25rem;flex-wrap:wrap}
+  .lnk{display:inline-flex;align-items:center;gap:.4rem;min-height:44px;font-weight:700;font-size:.92rem}
+  .lnk svg{width:16px;height:16px;transition:transform .3s var(--ease)}
+  .lnk:hover svg{transform:translate(2px,-2px)}
+
+  /* ---------- achievements (dark band) ---------- */
+  .dark{background:var(--night);color:#fff;position:relative;overflow:hidden;isolation:isolate}
+  .dark::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(50% 60% at 100% 0%,rgba(214,51,108,.28),transparent 70%),radial-gradient(50% 60% at 0% 100%,rgba(91,59,224,.35),transparent 70%)}
+  .dark .kicker{color:#B9A8FF}
+  .dark .head .intro{color:rgba(255,255,255,.72)}
+  .awards{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.12);border-radius:24px;overflow:hidden}
+  .awards li{background:var(--night);padding:clamp(1.4rem,3vw,2.1rem);display:grid;grid-template-columns:minmax(0,1fr);gap:.4rem;transition:background .3s}
+  .awards li:hover{background:#121530}
+  .awards .y{font:700 .9rem/1.35 var(--display);font-variant-numeric:tabular-nums;background:linear-gradient(100deg,#B9A8FF,#FF9FC0);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .awards h3{font-size:1.2rem;letter-spacing:-.02em}
+  .awards p{color:rgba(255,255,255,.72);font-size:.94rem;margin-top:.35rem}
+  .awards a{color:#C9BBFF;font-weight:600}
+  .awards a:hover{color:#fff}
+
+  /* ---------- publications ---------- */
+  .pubs{list-style:none;margin:0;padding:0;counter-reset:p;display:grid;gap:.85rem}
+  .pub{counter-increment:p;display:grid;grid-template-columns:3rem minmax(0,1fr) auto;gap:.5rem clamp(1rem,3vw,2rem);align-items:start;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(1.15rem,2.4vw,1.6rem);transition:border-color .3s,box-shadow .3s}
+  .pub:hover{border-color:#CFC6F7;box-shadow:0 18px 40px -30px rgba(91,59,224,.55)}
+  .pub::before{content:counter(p,decimal-leading-zero);font:700 1rem/1.5 var(--display);color:var(--violet);font-variant-numeric:tabular-nums}
+  .ptype{display:inline-block;font-size:.76rem;font-weight:700;color:var(--violet);background:var(--violet-soft);border-radius:6px;padding:.15rem .5rem;margin-bottom:.45rem}
+  .ptitle{font:600 clamp(1.05rem,1rem + .3vw,1.2rem)/1.35 var(--display);letter-spacing:-.015em;max-width:60ch}
+  .ptitle a{color:var(--ink)}
+  .ptitle a:hover{color:var(--violet)}
+  .pmeta{color:var(--muted);font-size:.9rem;margin-top:.3rem}
+  .pbtns{display:flex;gap:.45rem;flex-wrap:wrap;justify-content:flex-end}
+  .pbtn{display:inline-flex;align-items:center;gap:.35rem;min-height:40px;padding:.4rem .85rem;border-radius:999px;border:1px solid var(--line);font-size:.84rem;font-weight:700;color:var(--ink);background:var(--paper);transition:background .25s,color .25s,border-color .25s}
+  .pbtn:hover{background:var(--violet);border-color:var(--violet);color:#fff}
+  .pbtn svg{width:14px;height:14px}
+  .all{margin-top:1.5rem}
+
+  /* ---------- contact ---------- */
+  .contact-wrap{padding:0 0 var(--sec);scroll-margin-top:64px}
+  .contact{position:relative;overflow:hidden;isolation:isolate;border-radius:30px;background:var(--grad);color:#fff;padding:clamp(2.25rem,6vw,4.5rem);display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:2rem clamp(2rem,5vw,4rem);align-items:end}
+  .contact::after{content:"";position:absolute;z-index:-1;right:-15%;top:-70%;width:70%;aspect-ratio:1;background:radial-gradient(circle,rgba(255,255,255,.3),transparent 62%)}
+  .contact .kicker{color:rgba(255,255,255,.9)}
+  .contact .kicker::before{background:#fff}
+  .contact h2{font-size:clamp(2.1rem,1.5rem + 2.8vw,3.6rem);letter-spacing:-.04em;max-width:15ch}
+  .contact p{margin-top:1rem;color:rgba(255,255,255,.88);max-width:44ch}
+  .reach{display:grid;gap:.6rem}
+  .reach a{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:56px;padding:.8rem 1.15rem;border-radius:16px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);color:#fff;font-weight:600;transition:background .25s}
+  .reach a:hover{background:rgba(255,255,255,.22);color:#fff}
+  .reach a.primary{background:#fff;color:#22163F}
+  .reach a.primary:hover{background:#F3EFFF;color:#22163F}
+  .reach small{display:block;font-size:.78rem;font-weight:500;opacity:.75}
+  .reach svg{width:18px;height:18px}
+
+  /* ---------- footer ---------- */
+  footer{background:var(--night);color:rgba(255,255,255,.66);padding:2rem 0 calc(2rem + env(safe-area-inset-bottom))}
+  .foot-in{display:flex;flex-wrap:wrap;gap:1rem 2rem;justify-content:space-between;align-items:center;font-size:.88rem}
+  footer nav{display:flex;flex-wrap:wrap;gap:.25rem 1.25rem}
+  footer a{color:rgba(255,255,255,.78);display:inline-block;padding:.5rem 0}
+  footer a:hover{color:#fff}
+
+  /* ---------- motion: the hero cascade only ---------- */
+  @keyframes rise{from{opacity:0;transform:translateY(16px)}}
+  .rv{animation:rise .9s var(--ease) backwards;animation-delay:calc(var(--i,0) * 100ms)}
+  @media (prefers-reduced-motion:reduce){.rv{animation:none}*{transition-duration:.01ms!important}}
+
+  /* ---------- responsive ---------- */
+  @media (max-width:980px){
+    .hero-grid{grid-template-columns:minmax(0,1fr)}
+    .card{max-width:30rem}
+    .about{grid-template-columns:minmax(0,1fr)}
+    .side{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .journey{grid-template-columns:minmax(0,1fr)}
+    .journey:nth-child(even) .media{order:0}
+    .media{position:static}
+    .tile{aspect-ratio:auto;min-height:15rem}
+    .contact{grid-template-columns:minmax(0,1fr)}
+  }
+  @media (max-width:768px){
+    .links{display:none}
+    .bar .btn{margin-left:auto}
+    .head{grid-template-columns:minmax(0,1fr);align-items:start}
+    .side{grid-template-columns:minmax(0,1fr)}
+    .awards{grid-template-columns:minmax(0,1fr)}
+    .pub{grid-template-columns:2.25rem minmax(0,1fr)}
+    .pbtns{grid-column:2;justify-content:flex-start;margin-top:.4rem}
+    .numbers div{padding-right:.5rem}
+    .numbers div + div{padding-left:.75rem}
+    .foot-in{flex-direction:column;align-items:flex-start}
+  }
+  @media (max-width:420px){
+    .hero h1{font-size:clamp(3.5rem,19vw,5rem)}
+    .hero-actions .btn{flex:1 1 100%}
+    .card-top{grid-template-columns:4.25rem minmax(0,1fr)}
+    .facts div{grid-template-columns:5.25rem minmax(0,1fr)}
+    
+    .contact{border-radius:24px}
+  }
+
+  /* ---------- print / PDF (A4) ---------- */
+  @media print{
+    @page{size:A4;margin:14mm 14mm 16mm}
+    *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    html{scroll-behavior:auto}
+    body{background:#fff;font-size:10.5pt;line-height:1.5}
+    .shell{max-width:none;padding:0}
+    .skip,.bar,.hero-actions,footer,.all{display:none!important}
+    .rv{animation:none!important}
+    .hero{border-radius:5mm;padding:11mm 10mm;margin-bottom:2mm}
+    .hero-grid{grid-template-columns:1.25fr 1fr;gap:8mm}
+    .hero h1{font-size:52pt;margin:4mm 0 3mm}
+    .role-line{font-size:14pt}
+    .hero-line{font-size:10.5pt}
+    .card{backdrop-filter:none;-webkit-backdrop-filter:none;box-shadow:none;background:rgba(255,255,255,.07)}
+    .facts div{font-size:9.5pt;padding:1.2mm 0}
+    .social{min-height:0;padding:1.2mm 3mm;font-size:8.5pt}
+    .sec{padding:8mm 0 0;break-before:auto}
+    .head{display:block;margin-bottom:6mm}
+    .head h2{font-size:22pt;max-width:none}
+    .head .intro{margin-top:2mm;font-size:10pt}
+    .kicker{margin-bottom:2mm}
+    .about{grid-template-columns:1.4fr 1fr;gap:8mm}
+    .lead{font-size:14pt}
+    .side{grid-template-columns:1fr}
+    .panel,.numbers{break-inside:avoid}
+    #publications{break-before:page}
+    #work{padding-top:8mm!important}
+    .head{break-after:avoid}
+    .journeys{gap:8mm}
+    .journey{grid-template-columns:58mm 1fr;gap:7mm;break-inside:avoid}
+    .journey:nth-child(even) .media{order:0}
+    .media{position:static}
+    .shot{aspect-ratio:4/3;border-radius:4mm;box-shadow:none}
+    .shot-ph strong{font-size:12pt}
+    .shot-ph{font-size:8pt}
+    .journey h3{font-size:16pt}
+    .path{margin-top:4mm}
+    .path li{padding:0 0 3mm 11mm}
+    .node{width:7.5mm;height:7.5mm;font-size:8pt}
+    .path li:not(:last-child)::before{left:3.6mm;top:7.5mm}
+    .beat{padding-top:1.2mm;font-size:10pt}
+    .path p{font-size:9.5pt}
+    .foot{margin-top:3mm;padding-top:3mm}
+    .lnk{min-height:0}
+    .dark{background:#fff;color:var(--ink)}
+    .dark::before{display:none}
+    .dark .kicker{color:var(--violet)}
+    .dark .head .intro{color:var(--muted)}
+    .awards{background:var(--line);border-color:var(--line);border-radius:4mm}
+    .awards li{background:#fff;break-inside:avoid;padding:5mm}
+    .awards .y{background:none;color:var(--violet);-webkit-text-fill-color:var(--violet)}
+    .awards p{color:var(--muted)}
+    .awards a{color:var(--violet)}
+    .pub{break-inside:avoid;padding:4mm 5mm;border-radius:3mm}
+    .pbtn{min-height:0;padding:1mm 3mm}
+    .contact-wrap{padding:8mm 0 0;break-inside:avoid}
+    .contact{border-radius:5mm;padding:9mm}
+    .contact h2{font-size:24pt}
+    .reach a{min-height:0;padding:3mm 4mm}
+  }
+
+  @media print{
+    .hero{padding:8mm 9mm}
+    .hero h1{font-size:34pt;line-height:.95;margin:3mm 0 2mm}
+    .role-line{font-size:12pt}
+    .hero-line{font-size:9.5pt;margin-top:2mm}
+    .hello{font-size:8pt;padding:1mm 3mm}
+    .card{padding:4mm}
+    .card-top{grid-template-columns:14mm 1fr;padding-bottom:2.5mm}
+    .initials{font-size:13pt}
+    .facts{padding:1mm 0}
+    .facts div{grid-template-columns:18mm 1fr;font-size:8.5pt;padding:.8mm 0}
+    .socials{gap:1.5mm;padding-top:2.5mm}
+    #about{padding-top:6mm}
+    .about{grid-template-columns:1fr;gap:5mm}
+    .lead{font-size:12.5pt;max-width:none}
+    .about-copy .body{font-size:9.5pt}
+    .about-copy p + p{margin-top:2mm}
+    .numbers{margin-top:4mm}
+    .numbers b{font-size:18pt}
+    .side{grid-template-columns:1.2fr 1fr 1fr;gap:4mm}
+    .panel{padding:4mm}
+    .panel h3{font-size:10pt;margin-bottom:2mm}
+    .skills li{font-size:7.5pt;padding:.6mm 2mm}
+    .certs,.edu li{font-size:8.5pt}
+    .edu li{grid-template-columns:11mm 1fr;gap:2mm}
+    .edu{gap:2mm}
+    #achievements{break-before:auto;padding-top:10mm;break-inside:avoid}
+    .awards{grid-template-columns:1fr 1fr}
+    .awards li{padding:4mm}
+    .awards h3{font-size:11pt}
+    .awards p{font-size:9pt}
+    .pubs{gap:2.5mm}
+    .pub{grid-template-columns:9mm 1fr auto;padding:3mm 4mm}
+    .pbtns{grid-column:auto;margin-top:0;justify-content:flex-end}
+    .ptitle{font-size:10.5pt}
+    .pmeta{font-size:8.5pt;margin-top:1mm}
+    .ptype{font-size:7pt;margin-bottom:1mm}
+    .contact-wrap{padding-top:6mm}
+    .contact{grid-template-columns:1.2fr 1fr;padding:7mm;gap:6mm}
+    .contact h2{font-size:20pt}
+    .contact p{font-size:9.5pt}
+  }
+  @media print{
+    .hero h1 span{background:none;color:#fff;-webkit-text-fill-color:#fff}
+    .numbers b{background:none;color:var(--violet);-webkit-text-fill-color:var(--violet)}
+    #about{padding-top:5mm}
+    .about{grid-template-columns:1.3fr 1fr;gap:6mm}
+    .side{grid-template-columns:1fr;gap:2.5mm}
+    .panel{padding:3mm 3.5mm}
+    .lead{font-size:11.5pt}
+    .about-copy .body{font-size:9pt}
+    .numbers div{padding-top:2.5mm}
+    .numbers b{font-size:16pt}
+    #work{break-before:page;padding-top:0!important}
+  }
+  @media print{
+    @page{margin:11mm 13mm 12mm}
+    .hero{padding:6mm 8mm}
+    .skills{gap:1.2mm}
+    .skills li{font-size:7pt;padding:.4mm 1.8mm}
+    .certs,.edu li{font-size:8pt;line-height:1.4}
+    .edu small{font-size:7.5pt}
+    .panel h3{margin-bottom:1.5mm}
+    .about,.side{break-inside:avoid}
+  }
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Dr. Bimal Kumar Dora","jobTitle":"PhD Research Scholar, Power System Engineering","affiliation":{"@type":"CollegeOrUniversity","name":"Visvesvaraya National Institute of Technology, Nagpur"},"address":{"@type":"PostalAddress","addressLocality":"Nagpur","addressRegion":"Maharashtra","addressCountry":"IN"},"email":"mailto:bimaldora5@gmail.com","sameAs":["https://www.linkedin.com/in/bimal-kumar-dora-01bb64a8/","https://scholar.google.com/citations?user=Xyww_KwAAAAJ&hl=en","https://orcid.org/0000-0001-7353-6381","https://github.com/BimalKumarDora","https://www.researchgate.net/profile/Bimal-Dora","https://www.webofscience.com/wos/author/record/HPG-5369-2023"]}
+</script>
+</head>
+<body>
+
+<!--
+  Dr. Bimal Kumar Dora: portfolio
+  One self-contained file. Upload it as index.html to any static host (GitHub Pages, Netlify, Vercel).
+  Optional touches:
+   - Portrait: replace the "BD" inside <div class="avatar-in"> with <img src="photo.jpg" alt="Portrait of Dr. Bimal Kumar Dora">
+   - CV button: add <a class="btn btn-ghost" href="cv.pdf">Download CV</a> inside .hero-actions once the PDF is hosted
+   - Project images: replace a <div class="tile"> block with <img src="..." alt="..."> (16:11 landscape)
+   - Link previews: add og:url and og:image in the <head> (see the comment there)
+  The phone number from the CV is deliberately not published.
+-->
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="bar">
+  <div class="shell bar-in">
+    <a class="brand" href="#top" aria-label="Dr. Bimal Kumar Dora, back to top"><span class="mark" aria-hidden="true">B</span>Dr. Bimal Kumar Dora</a>
+    <nav class="links" aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#work">Research</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#publications">Publications</a>
+    </nav>
+    <a class="btn btn-grad btn-sm" href="#contact">Get in touch</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="top">
+    <div class="shell hero-grid">
+      <div>
+        <p class="hello rv" style="--i:0"><span class="dot" aria-hidden="true"></span>PhD Research Scholar, VNIT Nagpur</p>
+        <h1 class="rv" style="--i:1"><span>Dr. Bimal Kumar Dora</span></h1>
+        <p class="role-line rv" style="--i:2">Power system engineering and renewable energy research</p>
+        <p class="hero-line rv" style="--i:3">Research scholar working on renewable energy systems and optimisation algorithms — wind and solar resource assessment, load flow and power system studies, and the path to a global electricity grid.</p>
+        <div class="hero-actions rv" style="--i:4">
+          <a class="btn btn-grad" href="#work">Follow the research journeys</a>
+          <a class="btn btn-ghost" href="#publications">Read the publications</a>
+        </div>
+      </div>
+
+      <aside class="card rv" style="--i:5" aria-label="Quick facts">
+        <div class="card-top">
+          <div class="avatar"><div class="avatar-in" role="img" aria-label="Initials of Bimal Kumar Dora"><span class="initials">BD</span></div></div>
+          <div>
+            <p class="card-name">Dr. Bimal Kumar Dora</p>
+            <p class="card-sub">PhD scholar, VNIT Nagpur</p>
+          </div>
+        </div>
+        <dl class="facts">
+          <div><dt>Discipline</dt><dd>Power systems &amp; renewable energy research</dd></div>
+          <div><dt>Focus</dt><dd>100% renewable grids, HVDC interconnection, metaheuristic optimisation</dd></div>
+          <div><dt>Based in</dt><dd>Nagpur, Maharashtra, India</dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:bimaldora12@gmail.com" target="_blank">bimaldora12@gmail.com</a></dd></div>
+        </dl>
+        <div class="socials">
+          <a class="social" href="https://www.linkedin.com/in/bimal-kumar-dora-01bb64a8/" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3v-11Zm6.5 0h3.8v1.5h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1v5.45h-4v-4.83c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.91h-4v-11Z"/></svg>LinkedIn</a>
+          <a class="social" href="https://youtube.com/@myscienceandtechnologydiaries?si=F0kmoCb0tCgZ-Koo" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8ZM9.6 15.8V8.2l6.3 3.8-6.3 3.8Z"/></svg>YouTube</a>
+          <a class="social" href="https://scholar.google.com/citations?user=Xyww_KwAAAAJ&amp;hl=en" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3 1 9.5l4 2.36V17c0 1.1 3.13 3 7 3s7-1.9 7-3v-5.14l2-1.18V16h2V9.5L12 3Zm0 2.32 7.06 4.18L12 13.68 4.94 9.5 12 5.32Z"/></svg>Scholar</a>
+          <a class="social" href="https://orcid.org/0000-0001-7353-6381" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20ZM8.2 7.1a.95.95 0 1 1 0 1.9.95.95 0 0 1 0-1.9ZM7.5 10h1.4v7H7.5v-7Zm3 0h3c2.3 0 3.7 1.6 3.7 3.5 0 2-1.5 3.5-3.7 3.5h-3v-7Zm1.4 1.25v4.5h1.5c1.45 0 2.3-.95 2.3-2.25s-.85-2.25-2.3-2.25h-1.5Z"/></svg>ORCID</a>
+          <a class="social" href="https://github.com/BimalKumarDora" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.56 9.56 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>GitHub</a>
+          <a class="social" href="https://www.researchgate.net/profile/Bimal-Dora" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 3h18v18H3V3Zm5.2 4.5c-1.6 0-2.7.9-2.7 2.6v4c0 1.7 1.1 2.6 2.7 2.6s2.6-.9 2.6-2.5V12H8.1v1.2h1.3v1c0 .7-.4 1.1-1.2 1.1s-1.2-.4-1.2-1.2v-3.9c0-.8.4-1.2 1.2-1.2s1.2.4 1.2 1.1h1.4c0-1.6-1.1-2.6-2.6-2.6Zm6.3.1h-2.6v9h1.4v-3.6h1l1.6 3.6h1.6l-1.8-3.8c.9-.4 1.4-1.1 1.4-2.1 0-1.9-1.1-3.1-2.6-3.1Zm-.1 1.3c.8 0 1.2.6 1.2 1.6s-.4 1.6-1.2 1.6h-1.1V8.9h1.1Z"/></svg>ResearchGate</a>
+          <a class="social" href="https://www.webofscience.com/wos/author/record/HPG-5369-2023" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3Z"/></svg>Web of Science</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="sec" id="about">
+    <div class="shell">
+      <div class="about">
+        <div class="about-copy">
+          <p class="kicker">About</p>
+          <p class="lead">I study how a power system can run on renewable energy alone, and what it would take to connect such grids across countries and continents.</p>
+          <p class="body">My PhD at VNIT Nagpur is part of the Indo-European project <em>Global Electricity Grid: The Future of Earth</em>, funded by the Ministry of Education, India, in collaboration with the University of Liège, DTU and CentraleSupélec. Alongside resource assessment and grid design, I build metaheuristic optimisation algorithms for optimal power flow and reactive power dispatch, and I carry out power system studies on real network data, including real-time simulation on Typhoon HIL and a real-time transmission line simulator.</p>
+          <p class="body human">Outside research I write and blog, invest in the stock market, and spend time on photography, music and audiobooks.</p>
+          <div class="numbers">
+            <div><b>15</b><span>Journal papers</span></div>
+            <div><b>15</b><span>Conference papers</span></div>
+            <div><b>100+</b><span>Papers reviewed</span></div>
+          </div>
+        </div>
+        <div class="side">
+          <div class="card rv">
+            <h3>Tools and Methods</h3>
+            <ul class="skills">
+              <li>MATLAB</li><li>Python</li><li>GIS</li><li>ETAP</li><li>PSS/E</li><li>PSCAD</li><li>GAMS</li><li>PVsyst</li><li>MiPower</li><li>PLC</li><li>Typhoon HIL</li><li>Real-time transmission line simulator</li><li>Metaheuristic optimisation</li><li>Machine learning</li><li>LaTeX</li>
+            </ul>
+          </div>
+          <div class="card rv">
+            <h3>Certifications</h3>
+            <p class="certs">MATLAB and Python (LinkedIn Learning), Wind Energy (Coursera), and a Udemy series across ETAP, PSCAD, PSS/E, DIgSILENT PowerFactory, GAMS optimisation, PVsyst solar plant design, Siemens S7-1200 PLC/HMI and QGIS.</p>
+          </div>
+          <div class="card rv">
+            <h3>Education</h3>
+            <ul class="edu">
+              <li><span class="y">2021–</span><span>PhD, Power System Engineering<small>VNIT Nagpur, CGPA 8.0/10</small></span></li>
+              <li><span class="y">2020</span><span>MTech, Power System Engineering<small>NIT Sikkim, CGPA 8.1/10</small></span></li>
+              <li><span class="y">2016</span><span>BTech, Electrical Engineering<small>BPUT Odisha, CGPA 7/10</small></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WORK AS JOURNEYS ===================== -->
+  <section class="sec" id="work" style="padding-top:0">
+    <div class="shell">
+      <div class="head">
+        <div>
+          <p class="kicker">Research</p>
+          <h2>Four projects, told as short journeys</h2>
+        </div>
+        <p class="intro">Each one in three stops: where it started, what I did, and what came out of it.</p>
+      </div>
+
+      <div class="journeys">
+
+        <article class="journey">
+          <div class="media">
+            <div class="tile">
+              <span class="tile-no">Journey 01</span>
+              <p class="tile-k">PhD project</p>
+              <p class="tile-t">Global electricity interconnection with 100% renewable generation</p>
+              <ul class="stack"><li>MATLAB</li><li>Python</li><li>GIS</li><li>GBOML</li><li>Pyomo</li><li>Metaheuristics</li></ul>
+            </div>
+          </div>
+          <div>
+            <p class="meta"><span class="yr">2021–present</span><span>VNIT Nagpur, with University of Liège, DTU and CentraleSupélec</span></p>
+            <h3>Global Electricity Interconnection with 100% RE Generation</h3>
+            <p class="role">PhD research scholar</p>
+            <ol class="path">
+              <li><span class="node" aria-hidden="true">1</span><span class="beat">Context</span><p>A 100% renewable supply for India, and a grid that crosses continents, are unproven at scale. The work sits in the Indo-European project “Global Electricity Grid: The Future of Earth”, funded by the Ministry of Education, India, with Prof. Damien Ernst (University of Liège), Prof. Spyros Chatzivasileiadis (DTU) and Dr. Jing Dai (CentraleSupélec).</p></li>
+              <li><span class="node" aria-hidden="true">2</span><span class="beat">What I did</span><p>Built a Critical Time Window Framework to site onshore and offshore wind and solar PV in India, and assessed the resource with Weibull distributions and a temporal variability index. Designed an enhanced Indian interconnected grid at 100% RE with HVDC lines, costed it in GBOML including HVDC cost and losses, then selected countries and HVDC routes for a global grid on RE potential, demand, policy and political stability.</p></li>
+              <li><span class="node" aria-hidden="true">3</span><span class="beat">Outcome</span><p>A costed pathway to 100% renewable supply in India and a first global-grid design, plus a three-month visiting research stay at the University of Liège.</p></li>
+            </ol>
+            <div class="foot">
+              <ul class="tags"><li>100% renewables</li><li>HVDC</li><li>Resource assessment</li></ul>
+              <p class="out">
+                <a class="lnk" href="https://doi.org/10.1007/s00202-026-03561-w" target="_blank">Cost analysis paper <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+                <a class="lnk" href="https://doi.org/10.3390/en18051152" target="_blank">Global grid review <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="journey">
+          <div class="media">
+            <div class="tile">
+              <span class="tile-no">Journey 02</span>
+              <p class="tile-k">MTech project</p>
+              <p class="tile-t">Optimal power flow with an enhanced butterfly optimisation algorithm</p>
+              <ul class="stack"><li>MATLAB</li><li>Metaheuristics</li><li>IEEE 30 / 118-bus</li><li>Indian 62-bus</li></ul>
+            </div>
+          </div>
+          <div>
+            <p class="meta"><span class="yr">2018–2020</span><span>NIT Sikkim</span></p>
+            <h3>Optimal Power Flow with an Enhanced Butterfly Optimization Algorithm</h3>
+            <p class="role">MTech researcher</p>
+            <ol class="path">
+              <li><span class="node" aria-hidden="true">1</span><span class="beat">Context</span><p>Standard optimal power flow solvers struggle with non-convex, multi-objective problems.</p></li>
+              <li><span class="node" aria-hidden="true">2</span><span class="beat">What I did</span><p>Hybridised the Butterfly Optimization Algorithm with non-uniform mutation, an EMA balanced state and an elite strategy; 
+                validated it on classical and CEC benchmark functions; then applied it to single- and multi-objective stochastic OPF and security-constrained OPF on the IEEE 30-bus, IEEE 118-bus and Indian 62-bus systems.</p></li>
+              <li><span class="node" aria-hidden="true">3</span><span class="beat">Outcome</span><p>A solver that handles single- and multi-objective OPF variants on standard and Indian test systems.</p></li>
+            </ol>
+            <div class="foot">
+              <ul class="tags"><li>Optimal power flow</li><li>Metaheuristics</li><li>Benchmarking</li></ul>
+              <p class="out">
+                <a class="lnk" href="https://doi.org/10.1016/j.asoc.2023.110833" target="_blank">Related paper in Applied Soft Computing <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="journey">
+          <div class="media">
+            <div class="tile">
+              <span class="tile-no">Journey 03</span>
+              <p class="tile-k">Grid studies</p>
+              <p class="tile-t">Power system studies on real grid data</p>
+              <ul class="stack"><li>ETAP</li><li>PSCAD</li><li>MiPower</li><li>PSS/E</li></ul>
+            </div>
+          </div>
+          <div>
+            <p class="meta"><span class="yr">2021–2025</span><span>IEEE 14-bus system and real Nagpur network data</span></p>
+            <h3>Power System Studies on Real Grid Data</h3>
+            <p class="role">Analyst and designer</p>
+            <ol class="path">
+              <li><span class="node" aria-hidden="true">1</span><span class="beat">Context</span><p>A real distribution network needs validated load flow, known fault levels and a renewable retrofit.</p></li>
+              <li><span class="node" aria-hidden="true">2</span><span class="beat">What I did</span><p>Ran load flow on the IEEE 14-bus system and real Nagpur data for voltage magnitude and angle, active and reactive power at every bus, and line flows; ran fault analysis for LG, LL, LLG, LLL and LLLG faults to size relays and circuit breakers; then designed a hybrid wind-plus-solar grid on the same network.</p></li>
+              <li><span class="node" aria-hidden="true">3</span><span class="beat">Outcome</span><p>A validated study basis for protection design and a working hybrid renewable grid design.</p></li>
+            </ol>
+            <div class="foot">
+              <ul class="tags"><li>Load flow</li><li>Fault analysis</li><li>Hybrid RE</li></ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="journey">
+          <div class="media">
+            <div class="tile">
+              <span class="tile-no">Journey 04</span>
+              <p class="tile-k">Regional study</p>
+              <p class="tile-t">Renewable forecasting and battery storage for 100% RE in South Goa</p>
+              <ul class="stack"><li>Python</li><li>Machine learning</li><li>Battery storage</li></ul>
+            </div>
+          </div>
+          <div>
+            <p class="meta"><span class="yr">2021–2025</span><span>South Goa, India</span></p>
+            <h3>Renewable Forecasting and Battery Storage for 100% RE in South Goa</h3>
+            <p class="role">Researcher</p>
+            <ol class="path">
+              <li><span class="node" aria-hidden="true">1</span><span class="beat">Context</span><p>The region wants a 100% renewable supply, but solar and wind output vary through the day and the year.</p></li>
+              <li><span class="node" aria-hidden="true">2</span><span class="beat">What I did</span><p>Applied machine learning to forecast solar PV and wind generation, then designed the battery storage system to cover the gap.</p></li>
+              <li><span class="node" aria-hidden="true">3</span><span class="beat">Outcome</span><p>A storage-backed design for 100% renewable supply in South Goa.</p></li>
+            </ol>
+            <div class="foot">
+              <ul class="tags"><li>Forecasting</li><li>Machine learning</li><li>Energy storage</li></ul>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ACHIEVEMENTS ===================== -->
+  <section class="sec dark" id="achievements">
+    <div class="shell">
+      <div class="head">
+        <div>
+          <p class="kicker">Achievements</p>
+          <h2>Service, recognition and research visits</h2>
+        </div>
+        <p class="intro">Editorial and review work for leading publishers, international research experience, and time given back to students.</p>
+      </div>
+      <ul class="awards">
+        <li><span class="y">2023–present</span><div><h3>Journal Editor</h3><p>Mathematics and Computer Science Journal.</p></div></li>
+        <li><span class="y">2022–present</span><div><h3>Reviewer of 100+ papers</h3><p>For Nature, IEEE, Elsevier, Springer and Taylor &amp; Francis.</p></div></li>
+        <li><span class="y">Research visit</span><div><h3>University of Liège, Belgium</h3><p>Three-month research stay on the global electricity grid project.</p></div></li>
+        <li><span class="y">2021–present</span><div><h3>Programme volunteer</h3><p>GIAN and INSPIRE-MANAK programmes.</p></div></li>
+        <li><span class="y">2018–present</span><div><h3>Student mentor</h3><p>Guiding undergraduate and postgraduate project students.</p></div></li>
+        <li><span class="y">2017–2018</span><div><h3>GATE qualified</h3><p>Graduate Aptitude Test in Engineering.</p></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===================== PUBLICATIONS ===================== -->
+  <section class="sec" id="publications">
+    <div class="shell">
+      <div class="head">
+        <div>
+          <p class="kicker">Publications</p>
+          <h2>Selected Published Work</h2>
+        </div>
+        <p class="intro">15 journal papers, 15 conference papers, a book chapter and a book. A selection is below; each title opens the paper.</p>
+      </div>
+      <ol class="pubs">
+        <!-- <li class="pub">
+          <div>
+            <span class="ptype">Journal, Q1</span>
+            <p class="ptitle"><a href="https://scholar.google.com/citations?user=Xyww_KwAAAAJ&amp;hl=en">Wind Resource Assessment in India: A Critical Time Window Framework for Site Selection</a></p>
+            <p class="pmeta">B. K. Dora et al. <em>Renewable Energy</em>, Elsevier.</p>
+          </div>
+          <p class="pbtns"><a class="pbtn" href="https://scholar.google.com/citations?user=Xyww_KwAAAAJ&amp;hl=en">Scholar</a></p>
+        </li> -->
+        <li class="pub">
+          <div>
+            <span class="ptype">Journal, Q1</span>
+            <p class="ptitle"><a href="https://doi.org/10.1007/s00202-026-03561-w" target="_blank">Optimal cost analysis for 100% renewable energy integration in India: a step toward global electricity grid</a></p>
+            <p class="pmeta">B. K. Dora, S. Bhat, A. Mitra, D. Ernst, J. Dai, S. Das. <em>Electrical Engineering</em>, Springer Nature, 2026.</p>
+          </div>
+          <p class="pbtns"><a class="pbtn" href="https://doi.org/10.1007/s00202-026-03561-w" target="_blank">DOI</a></p>
+        </li>
+        <li class="pub">
+          <div>
+            <span class="ptype">Journal</span>
+            <p class="ptitle"><a href="https://doi.org/10.3390/en18051152" target="_blank">The Global Electricity Grid: A Comprehensive Review</a></p>
+            <p class="pmeta">B. K. Dora, S. Bhat, A. Mitra, D. Ernst, A. Halinka, D. Zychma et al. <em>Energies</em>, MDPI, 2025.</p>
+          </div>
+          <p class="pbtns"><a class="pbtn" href="https://doi.org/10.3390/en18051152" target="_blank">DOI</a></p>
+        </li>
+        <li class="pub">
+          <div>
+            <span class="ptype">Journal, Q1</span>
+            <p class="ptitle"><a href="https://doi.org/10.1016/j.asoc.2024.111548" target="_blank">A solution to multi-objective stochastic optimal power flow problem using mutualism and elite strategy based Pelican Optimization Algorithm</a></p>
+            <p class="pmeta">B. K. Dora, S. Bhat, S. Halder, I. Srivastava. <em>Applied Soft Computing</em>, Elsevier, 2024.</p>
+          </div>
+          <p class="pbtns"><a class="pbtn" href="https://doi.org/10.1016/j.asoc.2024.111548" target="_blank">DOI</a></p>
+        </li>
+        <li class="pub">
+          <div>
+            <span class="ptype">Journal, Q1</span>
+            <p class="ptitle"><a href="https://doi.org/10.1016/j.asoc.2023.110833" target="_blank">Optimal reactive power dispatch problem using exchange market based Butterfly Optimization Algorithm</a></p>
+            <p class="pmeta">B. K. Dora, A. Rajan, S. Mallick, S. Halder. <em>Applied Soft Computing</em>, Elsevier, 2023.</p>
+          </div>
+          <p class="pbtns"><a class="pbtn" href="https://doi.org/10.1016/j.asoc.2023.110833" target="_blank">DOI</a></p>
+        </li>
+        <li class="pub">
+          <div>
+            <span class="ptype">Conference</span>
+            <p class="ptitle"><a href="https://doi.org/10.1109/SEFET65155.2025.11255291" target="_blank">Cost Optimization of Renewable Energy Installation in a Four-Microgrid System Using GBOML</a></p>
+            <p class="pmeta">B. K. Dora et al. <em>IEEE SEFET 2025</em>.</p>
+          </div>
+          <p class="pbtns"><a class="pbtn" href="https://doi.org/10.1109/SEFET65155.2025.11255291" target="_blank">DOI</a></p>
+        </li>
+        <li class="pub">
+          <div>
+            <span class="ptype">Conference</span>
+            <p class="ptitle"><a href="https://doi.org/10.1109/SEFET65155.2025.11255299" target="_blank">Optimizing Renewable Energy Integration in Microgrids Using Graph-Based Optimization Modeling Language</a></p>
+            <p class="pmeta">K. Kavya, B. K. Dora et al. <em>IEEE SEFET 2025</em>.</p>
+          </div>
+          <p class="pbtns"><a class="pbtn" href="https://doi.org/10.1109/SEFET65155.2025.11255299" target="_blank">DOI</a></p>
+        </li>
+        <!-- <li class="pub">
+          <div>
+            <span class="ptype">Book</span>
+            <p class="ptitle"><a href="https://scholar.google.com/citations?user=Xyww_KwAAAAJ&amp;hl=en">Global Electricity Grid: The Future of Earth</a></p>
+            <p class="pmeta"><em>Wiley</em>.</p>
+          </div>
+          <p class="pbtns"><a class="pbtn" href="https://scholar.google.com/citations?user=Xyww_KwAAAAJ&amp;hl=en">Scholar</a></p>
+        </li> -->
+      </ol>
+      <p class="all"><a class="lnk" href="https://scholar.google.com/citations?user=Xyww_KwAAAAJ&amp;hl=en" target="_blank">See the full list on Google Scholar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a></p>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="contact-wrap" id="contact">
+    <div class="shell">
+      <div class="contact">
+        <div>
+          <p class="kicker">Contact</p>
+          <h2>Let's talk about renewable grids</h2>
+          <p>For research collaborations, review requests or a conversation about power systems and renewable energy, email is the quickest way to reach me.</p>
+        </div>
+        <div class="reach">
+          <a class="primary" href="mailto:bimaldora12@gmail.com" target="_blank"><span><small>Email</small>bimaldora12@gmail.com</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          <a href="https://www.linkedin.com/in/bimal-kumar-dora-01bb64a8/" target="_blank"><span><small>LinkedIn</small>Bimal Kumar Dora</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          <a href="https://orcid.org/0000-0001-7353-6381" target="_blank"><span><small>ORCID</small>0000-0001-7353-6381</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          <a href="https://youtube.com/@myscienceandtechnologydiaries?si=F0kmoCb0tCgZ-Koo" target="_blank"><span><small>YouTube</small>My Science and Technology Diaries</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="shell foot-in">
+    <p>© 2026 Dr. Bimal Kumar Dora. Last updated November 2026.</p>
+    <nav aria-label="Footer">
+      <a href="#about">About</a>
+      <a href="#work">Research</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#publications">Publications</a>
+      <a href="#top">Back to top</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
