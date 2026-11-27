@@ -254,6 +254,13 @@
   footer a{color:rgba(255,255,255,.78);display:inline-block;padding:.5rem 0}
   footer a:hover{color:#fff}
 
+  .visitors{display:flex;align-items:center;flex-wrap:wrap;gap:.55rem;border-bottom:1px solid rgba(255,255,255,.14);padding-bottom:1.4rem;margin-bottom:1.4rem;font-size:.86rem;color:rgba(255,255,255,.66)}
+  .visitors[hidden]{display:none}
+  .visitors svg{width:19px;height:19px;color:var(--violet-bright)}
+  .visitors strong{font-family:var(--display);font-size:1.5rem;line-height:1;letter-spacing:-.03em;color:#fff}
+  .visitors small{margin-left:auto;font-size:.74rem;color:rgba(255,255,255,.45)}
+  @media (max-width:640px){.visitors small{width:100%;margin:0}}
+
   /* ---------- motion: the hero cascade only ---------- */
   @keyframes rise{from{opacity:0;transform:translateY(16px)}}
   .rv{animation:rise .9s var(--ease) backwards;animation-delay:calc(var(--i,0) * 100ms)}
@@ -778,8 +785,14 @@
 </main>
 
 <footer>
+  <div class="shell visitors" id="visitors" hidden>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3m1-17a3 3 0 0 1 0 6m3 11v-3a6 6 0 0 0-3-5"/></svg>
+    <strong data-site-visitors>0</strong>
+    <span>website visitors</span>
+    <small>Approximate browsers &middot; since 27 Nov 2026</small>
+  </div>
   <div class="shell foot-in">
-    <p>© 2026 Dr. Bimal Kumar Dora. Last updated November 2026.</p>
+    <p>© 2026 Dr. Bimal Kumar Dora. All rights reserved.</p>
     <nav aria-label="Footer">
       <a href="#about">About</a>
       <a href="#work">Research</a>
@@ -790,5 +803,25 @@
   </div>
 </footer>
 
+<script>
+/* Visitor counter: one hit per browser, then plain reads of the shared total. */
+(function () {
+  var box = document.getElementById('visitors');
+  if (!box) return;
+  var out = box.querySelector('[data-site-visitors]');
+  var NS = 'bimalkdora-github-io', KEY = 'visitors', BASE = 'https://abacus.jasoncameron.dev';
+  var counted = false;
+  try { counted = !!localStorage.getItem('bkd_visit_counted'); } catch (e) {}
+  fetch(BASE + (counted ? '/get' : '/hit') + '/' + NS + '/' + KEY, { cache: 'no-store' })
+    .then(function (r) { if (!r.ok) throw 0; return r.json(); })
+    .then(function (d) {
+      if (!d || typeof d.value !== 'number') throw 0;
+      out.textContent = new Intl.NumberFormat('en-IN').format(d.value);
+      box.hidden = false;
+      try { localStorage.setItem('bkd_visit_counted', '1'); } catch (e) {}
+    })
+    .catch(function () {});
+})();
+</script>
 </body>
 </html>
